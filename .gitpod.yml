@@ -2,9 +2,11 @@ tasks:
   - init: |
       echo 'TODO: install lynx direnv tor'
       sudo apt-get install lynx direnv tor -y
+      npm install -g npm
     command: |
       echo 'TODO: start app'
       npm install
+      tor -f ./.torrc
       echo 'TODO:Good!!!'
 
 vscode:
