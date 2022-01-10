@@ -18,6 +18,7 @@
    const browser = await puppeteer.launch({
      headless: false,
 
+     // Добавим следующую строку.
      args: ['--proxy-server=socks5://127.0.0.1:9050']
    });
  
